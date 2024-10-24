@@ -14,5 +14,5 @@ def length_of_longest_substring(s: str) -> int: #we define the function and assi
 
     return max_length #once finished, we return the length of the longest substring
 
-str = "pwwkew" #test case for the function
+str = input('Enter a string to be checked, (E.g "pwwkew", "abcabcbb", "bbbbb", "tmmzuxt"):') #test case for the function
 print('The length of the longest substring without repeating characters is:', length_of_longest_substring(str))
