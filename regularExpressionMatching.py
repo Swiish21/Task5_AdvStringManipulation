@@ -7,6 +7,8 @@ def is_match(s: str, p: str) -> bool:
     if len(p) == 1:
         return len(s) == 1 and (p[0] == s[0] or (p[0] == '.' and s[0] != '\0'))
 
+
+
     # Recursive case: if the regular expression contains a '*', return True if the input string matches the substring before the '*' repeated any number of times, False otherwise
     if p[1] == '*':
         return (p[0] == s[0] or (p[0] == '.' and s[0] != '\0')) and is_match(s, p[2:]) or (s != '' and (p[0] == s[0] or (p[0] == '.' and s[0] != '\0')) and is_match(s[1:], p))
