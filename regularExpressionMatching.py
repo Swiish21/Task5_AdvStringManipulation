@@ -19,4 +19,4 @@ def is_match(s: str, p: str) -> bool: # we define a function called is_match tha
 print(is_match("aa", "a"))  # Output: False , reason is the expression wants a single character, the string has two characters
 print(is_match("aa", "a*"))  # Output: True , reason the expression has an asterisk, so it doesn't matter how many 'a's are in the string, it will match the condition
 print(is_match("ab", ".*"))  # Output: True , reason is the expression has a dot and then an asterisk, meaning any character(s) are allowed,
-print(is_match("mississippi", "mis*is*p*."))  # Output: False , reason is the input string has too many 'i' and 's', but the expression doesn't allow it to have all these 'i's and 's's, hence it will return false
+print(is_match("mississippi", "mis*is*p*."))  # Output: False , reason is the input string has too many 'i' and 's', but the expression doesn't allow it to have all these 'i's and 's's, hence it will return false.
