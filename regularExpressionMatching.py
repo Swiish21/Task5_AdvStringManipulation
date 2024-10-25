@@ -15,6 +15,7 @@ def is_match(s: str, p: str) -> bool: # we define a function called is_match tha
 
     return (s != '' and (p[0] == s[0] or (p[0] == '.' and s[0] != '\0')) and is_match(s[1:], p[1:])) #if the first character of the regular expression is the same as the first character of the string, we return true, otherwise false
 
+#test cases for our function
 print(is_match("aa", "a"))  # Output: False , reason is the expression wants a single character, the string has two characters
 print(is_match("aa", "a*"))  # Output: True , reason the expression has an asterisk, so it doesn't matter how many 'a's are in the string, it will match the condition
 print(is_match("ab", ".*"))  # Output: True , reason is the expression has a dot and then an asterisk, meaning any character(s) are allowed,
